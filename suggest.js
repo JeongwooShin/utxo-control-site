@@ -1,6 +1,7 @@
 'use strict';
 const suggestButton = document.getElementById('suggest-button');
 const suggestionEmail = 'runbickers@gmail.com';
+const english = document.documentElement.lang === 'en';
 function legacyCopy() {
   const previousFocus = document.activeElement;
   const field = document.createElement('textarea');
@@ -26,8 +27,8 @@ suggestButton.addEventListener('click', async () => {
     } catch { copied = legacyCopy(); }
   } else { copied = legacyCopy(); }
   if (copied) {
-    window.alert('제안사항을 보낼 이메일 주소가 복사되었습니다. 감사합니다');
+    window.alert(english ? 'The feedback email address has been copied. Thank you!' : '제안사항을 보낼 이메일 주소가 복사되었습니다. 감사합니다');
   } else {
-    window.prompt('자동 복사가 제한되어 있습니다. 아래 이메일 주소를 직접 복사해 주세요.', suggestionEmail);
+    window.prompt(english ? 'Please copy the email address below to send your feedback.' : '자동 복사가 제한되어 있습니다. 아래 이메일 주소를 직접 복사해 주세요.', suggestionEmail);
   }
 });

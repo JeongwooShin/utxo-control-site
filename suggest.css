@@ -1,4 +1,5 @@
 .header nav{align-items:center}
+.header{flex-wrap:wrap;gap:16px}.languages{display:flex;gap:4px;align-items:center}.languages a{padding:8px 10px;border:1px solid #b6aa8e;border-radius:6px;text-decoration:none;font-size:13px}.languages a[aria-current=page]{background:#352d1e;color:#fff}.languages a:focus-visible{outline:3px solid #aa691a;outline-offset:3px}
 .suggest-button{border:1px solid #b6aa8e;background:#f0e8d7;color:#352d1e;border-radius:7px;padding:9px 15px;font:inherit;font-weight:700;cursor:pointer;white-space:nowrap}
 .suggest-button:hover{background:#eec56c}
 .suggest-button:focus-visible{outline:3px solid #aa691a;outline-offset:4px}
