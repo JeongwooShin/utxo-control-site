@@ -10,7 +10,7 @@ Buildless HTML/CSS on GitHub Pages. App source: https://github.com/JeongwooShin/
 - Publish main branch root via GitHub Pages.
 - Release availability text is manually maintained. Change it only after verifying Google Play availability.
 - Screenshots are real, empty demonstration-wallet captures, not proof of a funded transaction.
-- The wallet-opening capture includes older storage-option text; the guide explicitly states that persistent private-key storage is not provided.
+- The obsolete wallet-opening capture is not displayed: its storage-option warning is incorrect. The guide uses a bilingual session-only key-handling notice instead. App main.dart still needs its Korean/English security notice corrected in the next app update.
 - Never publish private keys, credentials, funded wallet screenshots or personal account data.
 - Existing goodmorningpharmacy.runbickers.com and legal.runbickers.com sites are separate and must remain unchanged.
 

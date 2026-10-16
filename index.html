@@ -12,7 +12,7 @@
   <link rel="canonical" href="https://utxo-control.runbickers.com/">
   <link rel="alternate" hreflang="ko" href="https://utxo-control.runbickers.com/">
   <link rel="alternate" hreflang="en" href="https://utxo-control.runbickers.com/en.html">
-  <link rel="icon" href="assets/icon.png"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="suggest.css">
+  <link rel="icon" href="assets/icon.png"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="suggest.css"><link rel="stylesheet" href="key-notice.css">
 </head>
 <body>
 <a class="skip" href="#main">본문으로 바로가기</a>
@@ -36,7 +36,7 @@
   <div class="concept" aria-label="UTXO 선택 예시"><div><span class="tiny">01 / 확인</span><strong>내 지갑의 코인 묶음</strong><div class="coins"><span class="coin chosen">UTXO A <b>✓</b></span><span class="coin">UTXO B</span><span class="coin chosen">UTXO C <b>✓</b></span></div></div><span class="arrow" aria-hidden="true">→</span><div><span class="tiny">02 / 선택</span><strong>필요한 묶음만 전송에 사용</strong><p>A + C로 거래를 만들고,<br>B는 선택하지 않습니다.</p></div><span class="example">개념 설명용 예시</span></div>
 </section>
 <section class="guide section" id="guide"><div class="wrap"><p class="eyebrow">A SMALL GUIDE</p><h2>처음이라면,<br>이 순서로 시작하세요.</h2><p class="section-intro">개인키는 이 웹페이지에 입력하지 마세요.<br>지갑 열기와 전송은 설치한 앱 안에서만 진행합니다.</p>
-<div class="guide-layout"><figure><div class="device light"><img src="assets/wallet-open.png" width="1080" height="1920" loading="lazy" alt="UTXO Control 지갑 열기 화면: WIF 개인키 입력, QR 스캔 및 계속 버튼"></div><figcaption>실제 앱의 지갑 열기 화면.<br>촬영본에 저장 옵션 안내가 있지만, 현재 버전은 개인키 영구 저장을 제공하지 않습니다.</figcaption></figure>
+<div class="guide-layout"><aside class="key-notice" aria-labelledby="key-notice-title"><p class="eyebrow">PRIVATE KEY · SESSION ONLY</p><h3 id="key-notice-title">개인키를 저장하는<br>기능은 없습니다.</h3><p>입력한 개인키는 앱 실행 중 세션 메모리에서만 사용하며, 기기 저장소에 영구 저장하지 않습니다.</p><p>화면 잠금이나 홈 화면 이동만으로 세션이 종료되지는 않습니다. 앱 프로세스가 종료되면 개인키를 다시 입력해야 합니다.</p><p class="key-reminder">개인키 원본은 사용자가 별도로 안전하게 보관해 주세요.</p></aside>
 <ol class="steps"><li><span>01</span><div><h3>지갑을 열어요</h3><p>본인이 관리하는 지갑의 WIF 개인키를 앱에서 입력하거나 QR로 읽습니다. 개인키는 외부에 공유하지 말고 원본을 안전하게 보관하세요.</p></div></li><li><span>02</span><div><h3>보낼 코인을 골라요</h3><p>잔액과 UTXO 목록을 확인하고 사용할 항목을 선택합니다. Legacy와 Native SegWit 주소의 잔액을 확인할 수 있습니다.</p></div></li><li><span>03</span><div><h3>주소·금액·수수료를 확인해요</h3><p>받는 주소를 입력하거나 QR로 읽고 전송 금액을 정합니다. 최종 확인 화면에서 주소, 선택한 코인, 금액과 수수료를 다시 확인하세요.</p></div></li><li><span>04</span><div><h3>인증하고 전송해요</h3><p>PIN 또는 설정한 생체인증으로 확인합니다. 거래는 기기에서 서명하며, 서명된 거래를 네트워크에 전송합니다. 전송 후 거래 번호(TXID)로 처리 상태를 확인하세요.</p></div></li></ol></div>
 </div></section>
 <section class="wrap section safety" id="safety"><p class="eyebrow">YOUR KEYS. YOUR RESPONSIBILITY.</p><div class="split"><h2>직접 관리하는 만큼,<br>확인은 신중하게.</h2><p>UTXO Control은 코인을 대신 보관하는 서비스가 아닙니다. 거래를 전송하기 전에 아래 내용을 꼭 확인하세요.</p></div><div class="safety-grid"><article><span>01</span><h3>개인키를 보관해 주세요</h3><p>현재 버전은 개인키를 세션 메모리에서 사용하며 영구 저장하지 않습니다. 앱은 개인키 분실 시 복구해 드릴 수 없습니다.</p></article><article><span>02</span><h3>전송 전, 한 번 더 확인하세요</h3><p>받는 주소와 네트워크, 금액과 수수료를 확인하세요. 전송된 거래는 취소가 어려우므로 처음에는 소액 테스트를 권합니다.</p></article><article><span>03</span><h3>전송과 확정은 달라요</h3><p>거래 번호가 생성되어도 블록 확정에는 시간이 걸릴 수 있습니다. 거래 조회 결과와 확인 수를 확인하세요.</p></article></div></section>
